@@ -70,3 +70,12 @@ function donate() {
 
       let helpButton = document.querySelector(".help-button");
       helpButton.addEventListener("click", help);
+	  
+/*	function when image clicked show text  
+$("#hide").click(function(){
+  $("p").hide();
+});
+
+$("#show").click(function(){
+  $("p").show();
+});*/
