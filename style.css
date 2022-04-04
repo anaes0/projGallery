@@ -1,0 +1,63 @@
+h4{
+    text-align: center;
+    font-size: 30px;
+    color: #d9917b;
+    font-family: "Cormorant Garamond", serif;
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+	border-radius: 10px;      
+}
+     
+/* Images containers */
+.column{
+float: left;
+width: 22.22%;
+padding: 15px;
+}
+
+/* Clear floats after image containers */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.column:hover{
+    opacity: 0.5;
+    cursor: crosshair;
+    filter: grayscale(60%);
+}
+.donate-button {
+    border: 1.5px solid pink;
+    border-radius: 2em;
+    margin: 0cm 0cm 48px;
+    transition: background 250ms ease-in-out;
+    letter-spacing: 1px;
+    padding: 17.92px 29.92px;
+    background: #d9917b;
+    color: floralwhite;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px;
+    right: 1cm;
+    top: 1cm;
+    position: fixed;
+    font-weight: 900;
+    box-shadow: 5px 2px 2px rgba(122, 159, 177, 0.5);
+}
+	  
+button:hover {
+    color: #212529;
+    background: radial-gradient(
+        905px at 4.9% 85.8%,
+        rgb(255, 243, 242) 0.1%,
+        rgb(255, 247, 220) 57.6%
+    );
+    opacity: 0.9;
+    cursor: pointer;
+}
+      
+
