@@ -9,8 +9,10 @@ h4{
 img{
     display: block;
     margin: 0 auto;
+	width: 100%;
     max-width: 100%;
-	border-radius: 10px;      
+	border: 1px solid #ddd; /* Gray border */
+	border-radius: 10px;  /* Rounded border */      
 }
      
 /* Images containers */
@@ -28,8 +30,9 @@ padding: 15px;
 }
 .column:hover{
     opacity: 0.5;
-    cursor: crosshair;
+    cursor: pointer;
     filter: grayscale(60%);
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 .donate-button {
     border: 1.5px solid pink;
@@ -59,5 +62,4 @@ button:hover {
     opacity: 0.9;
     cursor: pointer;
 }
-      
 
