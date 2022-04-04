@@ -6,15 +6,7 @@ h4{
     text-decoration: none;
 }
 
-img{
-    display: block;
-    margin: 0 auto;
-	width: 100%;
-    max-width: 100%;
-	border: 1px solid #ddd; /* Gray border */
-	border-radius: 10px;  /* Rounded border */      
-}
-     
+   
 /* Images containers */
 .column{
 float: left;
@@ -62,4 +54,37 @@ button:hover {
     opacity: 0.9;
     cursor: pointer;
 }
+.onClickTextOverImage{
+  width:300px;
+  height:200px;
+  background-size:cover;
+  display:inline-block;
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 10px;  /* Rounded border */   
+  margin:4px;
+  cursor:pointer;
+  position:relative; 
+}
 
+.onClickTextOverImage div{
+  position:absolute;
+  color:#fff;
+  padding:8px;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-color:rgba(0,0,0,0.5);
+  border-radius:16px;
+  padding-top:35%;
+  text-align:center;
+  opacity:0;
+  visibility:hidden;
+  transition:.3s;
+}
+
+.onClickTextOverImage.show div{
+  opacity:1;
+  padding-top:40%;
+  visibility:visible;
+}

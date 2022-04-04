@@ -1,3 +1,25 @@
+/*Text over image when clicked*/
+var textOverImages = document.getElementsByClassName("onClickTextOverImage");
+var previousTextOverImage;
+
+for (var i = 0; i < textOverImages.length; i++) {
+  textOverImages[i].onclick = function() {
+    var classes = this.classList;
+    if (classes.contains("show")) {
+      classes.remove("show");
+    } else {
+      if (previousTextOverImage != null)
+        previousTextOverImage.classList.remove("show");
+      previousTextOverImage = this;
+      classes.add("show");
+    }
+  }
+}
+
+function stopPropagation(event){
+  event.stopPropagation();
+}
+
 function donate() {
         let name = prompt("What is your name?");
         let phone = prompt("What is your phone number?");
@@ -71,11 +93,5 @@ function donate() {
       let helpButton = document.querySelector(".help-button");
       helpButton.addEventListener("click", help);
 	  
-/*	function when image clicked show text  
-$("#hide").click(function(){
-  $("p").hide();
-});
 
-$("#show").click(function(){
-  $("p").show();
-});*/
+
